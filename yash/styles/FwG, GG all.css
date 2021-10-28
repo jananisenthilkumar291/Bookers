@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.top {
+  padding: 80px 0;
+  background: url(../images/search_results_background.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.top .subHeading {
+  font-size: larger;
+}
+.heading {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: normal;
+  font-size: 3.5em;
+  letter-spacing: 0.6px;
+  position: relative;
+  padding: 0 50px;
+  display: inline-block;
+}
+.top .heading::after,
+.top .heading::before {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  transform: scaleX(0.9) translateY(-50%) rotateZ(45deg);
+}
+.top .heading::before {
+  left: 0;
+}
+.top .heading::after {
+  right: 0;
+}
+.top .path {
+  font-size: larger;
+}
+.top .path .arrow {
+  font-size: inherit;
+}
+.top .path > a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+.content {
+  text-align: center;
+  padding: 80px 0;
+}
+.content .heading {
+  font-size: 2em;
+}
+.filterBtn {
+  border-bottom: 1px solid rgb(211, 211, 211);
+  display: inline-block;
+  margin-bottom: 80px;
+}
+.filterBtn .btn {
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  font-size: 1.2em;
+  position: relative;
+  padding: 5px;
+  transition: all 0.5s;
+}
+.filterBtn .btn:not(:last-child){
+  margin-right: 30px; 
+}
+.filterBtn .btn::after,
+.active::after {
+  content: '';
+  height: 1px;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  transition: all 0.5s;
+  left: 0;
+  background-color: black;
+}
+.filterBtn .btn.active::after {
+  width: 100%;
+}
+.filterBtn .btn:hover,
+.active {
+  color: rgb(84, 84, 84);
+}
+.filterBtn .btn:hover::after {
+  width: 100%;
+}
+.content .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content .gallery .image {
+  display: none;
+  cursor: pointer;
+  flex:33.3%;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+  padding-top: 33.3%;
+}
+.content .gallery .image > img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.scale1 {
+  animation: animScale1 0.4s forwards;
+  display: block !important;
+}
+@keyframes animScale1 {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content .gallery .image {
+    flex: 50%;
+  }
+  .top .heading {
+    font-size: 1.8em;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .content .gallery .image {
+    flex: 100%;
+  }
+}

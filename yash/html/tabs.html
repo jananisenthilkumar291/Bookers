@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="../styles/tabs.css">
+    <script src="https://kit.fontawesome.com/0be67b061b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="containerh">
+        <p id="first">Choose Your Style</p>
+        <p id="second"><span class="diamonds">&#9830;&nbsp;</span>Tabs <span class="diamonds">&#9830;&nbsp;</span></p>
+        <p id="third"><a href="../../index.html">Home</a><span class="arrow">&#8594;</span><a href="FwG hover title.html">Pages</a><span class="arrow">&#8594;</span><a href="#">Search Results</a></p>
+    </div>
+    <div class="tabs">
+        <h1>standard tabs</h1>
+        <div class="standard-tabs">
+            <button class="" id="btn-1" onclick="openCity('Overview','btn-1') ">Overview</button>
+            <button class="" id="btn-2" onclick="openCity('Founder','btn-2')">Founder</button>
+            <button class="" id="btn-3" onclick="openCity('Mission','btn-3')">Mission</button>
+        </div>
+
+        <div id="Overview" class="tab-1 active">
+            <span><strong> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit.</strong></span><br><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cup</p><br><br>
+            <button onclick="window.scrollTo(top);" >Learn More</button>
+        </div>
+
+        <div id="Founder" class="tab-1">
+            <img src="../images/founder.jpg" alt="">
+            <div class="grp">
+                <h2>Roy Henry</h2> <br> <br>
+                <span><i>Founder</i> </span> <br> <br>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupt</p> <br>
+                <button onclick="window.scrollTo(top);" >Learn More</button>
+            </div>
+        </div>
+
+        <div id="Mission" class="tab-1">
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis</p> <br>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p> <br>
+            <button onclick="window.scrollTo(top);" >Learn More</button>
+        </div>
+
+
+        <h1>small tabs</h1>
+        <div class="standard-tabs small-tabs">
+            <button id="btn-4" onclick="openCity1('San-Diego',this.id)">San Diego</button>
+            <button id="btn-5" onclick="openCity1('New-York',this.id)">New York</button>
+            <button id="btn-6" onclick="openCity1('Chicago',this.id)">Chicago</button>
+            <button id="btn-7" onclick="openCity1('Los-Angeles',this.id)">Los Angeles</button>
+        </div>
+
+        <div id="San-Diego" class="tab-2 active">
+            <i class="fas fa-map-marker-alt"></i> 2130 Fulton Street, New York, NY 94117-1080 USA <br> <br>
+            <i class="fas fa-phone-alt"></i> 1-800-0987-654 1-800-0987-654 <br> <br>
+            <i class="fas fa-envelope-open"></i>newyork@demolink.org <br> <br>
+        </div>
+
+        <div id="New-York" class="tab-2">
+            <i class="fas fa-map-marker-alt"></i> 2130 Fulton Street, New York, NY 94117-1080 USA <br> <br>
+            <i class="fas fa-phone-alt"></i> 1-800-0987-654 1-800-0987-654 <br> <br>
+            <i class="fas fa-envelope-open"></i>newyork@demolink.org <br> <br>
+        </div>
+
+        <div id="Chicago" class="tab-2">
+            <i class="fas fa-map-marker-alt"></i> 2130 Fulton Street, New York, NY 94117-1080 USA <br> <br>
+            <i class="fas fa-phone-alt"></i> 1-800-0987-654 1-800-0987-654 <br> <br>
+            <i class="fas fa-envelope-open"></i>newyork@demolink.org <br> <br>
+        </div>
+        <div id="Los-Angeles" class="tab-2">
+            <i class="fas fa-map-marker-alt"></i> 2130 Fulton Street, New York, NY 94117-1080 USA <br> <br>
+            <i class="fas fa-phone-alt"></i> 1-800-0987-654 1-800-0987-654 <br> <br>
+            <i class="fas fa-envelope-open"></i>newyork@demolink.org <br> <br>
+        </div>
+
+
+        <h1>Vertical Tabs</h1>
+        <div class="vt">
+            <div class="standard-tabs vertical-tabs">
+                <button id="btn-8" onclick="openCity2('Overview1',this.id)">Overview</button>
+                <button id="btn-9" onclick="openCity2('Founder1',this.id)">Founder</button>
+                <button id="btn-10" onclick="openCity2('Mission1',this.id)">Mission</button>
+            </div>
+
+            <div id="Overview1" class="tab-3 active">
+                <span><strong> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit.</strong></span><br><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cup</p><br><br>
+                <button onclick="window.scrollTo(top);" >Learn More</button>
+            </div>
+
+            <div id="Founder1" class="tab-3">
+                <img src="../images/founder.jpg" alt="">
+                <div class="grp">
+                    <h2>Roy Henry</h2> <br> <br>
+                    <span><i>Founder</i> </span> <br> <br>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupt</p> <br>
+                    <button onclick="window.scrollTo(top);" >Learn More</button>
+                </div>
+            </div>
+
+            <div id="Mission1" class="tab-3">
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis</p> <br>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p> <br>
+                <button onclick="window.scrollTo(top);" >Learn More</button>
+            </div>
+        </div>
+
+        <h1>Horizontal Button Tabs</h1>
+        <div class="hbt">
+            <div class="standard-tabs">
+                <button id="btn-11" onclick="openCity3('first-tab',this.id)">Tab 1</button>
+                <button id="btn-12" onclick="openCity3('second-tab',this.id)">Tab 2</button>
+                <button id="btn-13" onclick="openCity3('third-tab',this.id)">Tab 3</button>
+                <button id="btn-14" onclick="openCity3('fourth-tab',this.id)">Tab 4</button>
+            </div>
+
+            <div id="first-tab" class="tab-4 active">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p><br><br>
+            </div>
+
+            <div id="second-tab" class="tab-4">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo</p>
+            </div>
+
+            <div id="third-tab" class="tab-4">
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+            </div>
+            <div id="fourth-tab" class="tab-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+            </div>
+        </div>  
+
+        <h1>Vertical Button Tabs</h1>
+        <div class="vbt">
+            <div class="standard-tabs vertical-tabs">
+                <button id="btn-15" onclick="openCity4('first-tab1',this.id)">Tab 1</button>
+                <button id="btn-16" onclick="openCity4('second-tab1',this.id)">Tab 2</button>
+                <button id="btn-17" onclick="openCity4('third-tab1',this.id)">Tab 3</button>
+                <button id="btn-18" onclick="openCity4('fourth-tab1',this.id)">Tab 4</button>
+            </div>
+
+            <div id="first-tab1" class="tab-5 active">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            </div>
+
+            <div id="second-tab1" class="tab-5">
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+            </div>
+
+            <div id="third-tab1" class="tab-5">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor                </p>
+            </div>
+
+            <div id="fourth-tab1" class="tab-5">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="../scripts/tabs.js"></script>
+</body>

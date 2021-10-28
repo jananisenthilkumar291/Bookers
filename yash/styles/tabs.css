@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.containerh {
+    background: url("../images/search_results_background.jpg");
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#first {
+    color: rgb(214, 216, 218);
+    font-size: 30px;
+}
+
+#second {
+    font-size: 70px;
+    color: #ffffff;
+    letter-spacing: 0.10em;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#third {
+    color: rgb(214, 216, 218);
+    font-size: 25px;
+}
+
+#third>a {
+    text-decoration: none;
+    color: rgb(214, 216, 218);
+    font-size: 20px;
+    margin: 20px;
+}
+
+#third>a:hover {
+    color: rgb(248, 130, 130);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.tabs {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tab-5,
+.tab-4,
+.tab-3,
+.tab-2,
+.tab-1 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+strong {
+    font-weight: 450;
+}
+
+.standard-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-left: -100px;
+}
+
+.standard-tabs>button {
+    background: none;
+    border: none;
+    font-size: 26px;
+}
+
+#Overview,
+#Overview1 {
+    width: 40%;
+}
+
+#Mission>p {
+    margin: auto;
+    width: 32%;
+}
+
+.vbt>.standard-tabs>button,
+.hbt>.standard-tabs>button,
+#Mission1>button,
+#Mission>button,
+.grp>button,
+#Overview1>button,
+#Overview>button {
+    height: 60px;
+    width: 60vw;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    font-size: 23px;
+    padding-left: 30px;
+    background-color: #fff586;
+    cursor: pointer;
+    color: black;
+    width: 200px;
+    text-align: center;
+    padding-right: 25px;
+}
+
+.vbt>.standard-tabs>button,
+.hbt>.standard-tabs>button {
+    padding-left: 20px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+.hbt>.standard-tabs>button:hover,
+#Mission1>button:hover,
+#Mission>button:hover,
+.grp>button:hover,
+#Overview1>button:hover,
+#Overview>button:hover {
+    color: white;
+    background-color: rgb(36, 35, 35);
+}
+
+#Founder1,
+#Founder {
+    flex-direction: row;
+    gap: 20px;
+    width: 40%;
+}
+
+#Mission1>button,
+#Mission>button {
+    display: block;
+    margin: auto;
+}
+
+.small-tabs>button {
+    font-size: 20px;
+}
+
+.active {
+    display: block;
+}
+
+.vt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.vertical-tabs {
+    margin-top: -80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tab-5,
+.tab-4 {
+    margin: auto;
+    width: 50%;
+}
+
+.vbt {
+    display: flex;
+    width: 40%;
+}
+
+.vbt>.standard-tabs {
+    margin-top: 30px;
+}
+
+#Mission1 {
+    width: 40%;
+}
+
+@media screen and (max-width: 750px) {
+    .standard-tabs {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .containerh {
+        height: 100vh;
+    }
+    #second {
+        font-size: 35px;
+    }
+    .diamonds {
+        display: none;
+    }
+    #third {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .arrow {
+        margin-top: 13px;
+    }
+}
